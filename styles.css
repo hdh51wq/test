@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFD700;
+    overflow: hidden;
+    transition: background-color 1s;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    transition: all 1s;
+    font-family: Copperplate, Papyrus, fantasy;
+    text-align: center;
+}
+
+.loading-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background-color: black;
+    width: 0%;
+    transition: width 0.1s linear;
+    display: block !important;
+    visibility: visible !important;
+}
+
+.counter {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+#actionButton {
+    position: fixed;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+.input-section {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1001;
+    gap: 10px;
+}
+
+#nameSubmit {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.btd-message {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    display: none;
+    font-family: Copperplate, Papyrus, fantasy;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.char-animation {
+    opacity: 0;
+    display: inline-block;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.special-logo {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.final-logo {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.error-404 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: white;
+    display: none;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% { transform: translate(-52%, -50%); }
+    25% { transform: translate(-48%, -50%); }
+    50% { transform: translate(-50%, -52%); }
+    75% { transform: translate(-50%, -48%); }
+    100% { transform: translate(-50%, -50%); }
+}
+
+.moving-button {
+    position: absolute;
+    transition: all 0.5s;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.hidden {
+    display: none;
+}

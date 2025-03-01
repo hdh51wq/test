@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Birthday Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="loadingMusic" loop>
+        <source src="ds.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="birthdayMusic">
+        <source src="d.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="center-text" id="mainText">this animated by hdh</div>
+    <div class="loading-bar" id="loadingBar"></div>
+    <div class="counter" id="counter">0%</div>
+    <div class="input-section" id="inputSection">
+        <input type="text" id="nameInput" placeholder="Hey there! What's your name?">
+        <button id="nameSubmit">Submit</button>
+    </div>
+    <button id="actionButton">Continue</button>
+    
+    <div class="btd-message" id="btdMessage"></div>
+    <img src="2.png" alt="Special Logo" class="special-logo hidden" id="specialLogo">
+    <img src="1.jpeg" alt="Final Logo" class="final-logo hidden" id="finalLogo">
+    <div class="error-404" id="error404">404</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
